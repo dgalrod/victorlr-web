@@ -36,27 +36,25 @@ export default function HeroSection() {
   return (
     <section className="relative h-dvh min-h-[600px] flex items-center overflow-hidden">
       <Image
+        src="/images/hero/hero-mobile.png"
+        alt="VictorLR en directo"
+        fill
+        priority
+        className="object-cover object-top md:hidden"
+        sizes="100vw"
+      />
+      <Image
         src="/images/hero/hero.png"
         alt="VictorLR en directo"
         fill
         priority
-        className="object-cover object-[75%_center] md:object-right opacity-70"
+        className="hidden md:block object-cover object-right"
         sizes="100vw"
       />
 
-      <div className="absolute inset-0 mix-blend-screen opacity-60 pointer-events-none">
-        <Image
-          src="/images/hero/halftone.png"
-          alt=""
-          fill
-          className="object-cover object-[75%_center] md:object-right"
-          sizes="100vw"
-          aria-hidden="true"
-        />
-      </div>
-
-      <div className="absolute inset-0 bg-linear-to-b from-bg-primary/80 via-transparent to-bg-primary" />
-      <div className="absolute inset-0 bg-linear-to-r from-bg-primary/60 to-transparent" />
+      <div className="absolute inset-0 bg-bg-primary/40 md:bg-transparent" />
+      <div className="absolute inset-0 bg-linear-to-b from-bg-primary/80 via-bg-primary/30 to-bg-primary md:via-transparent" />
+      <div className="absolute inset-0 bg-linear-to-r from-bg-primary/80 via-bg-primary/40 to-transparent md:from-bg-primary/60 md:via-transparent" />
 
       <motion.div
         variants={stagger}
