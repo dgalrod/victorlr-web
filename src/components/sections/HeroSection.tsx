@@ -74,7 +74,7 @@ export default function HeroSection() {
           className="font-heading font-bold leading-[0.95] text-text-primary"
           style={{ fontSize: "clamp(3rem, 8vw, 7rem)" }}
         >
-          VÍCTOR <span className="text-accent-neon">LRX</span>
+          VÍCTOR <span className="text-accent-neon">LR</span>
         </motion.h1>
 
         <motion.p
